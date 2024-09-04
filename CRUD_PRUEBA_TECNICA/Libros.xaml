@@ -1,0 +1,32 @@
+﻿<Window x:Class="CRUD_PRUEBA_TECNICA.Libros"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CRUD_PRUEBA_TECNICA"
+        mc:Ignorable="d"
+        Title="Libros" Height="450" Width="800">
+    <Grid>
+        <Label Content="ID" HorizontalAlignment="Left" Margin="23,28,0,0" VerticalAlignment="Top"/>
+        <Label Content="Título" HorizontalAlignment="Left" Margin="23,59,0,0" VerticalAlignment="Top"/>
+        <Label Content="Autor" HorizontalAlignment="Left" Margin="23,90,0,0" VerticalAlignment="Top"/>
+        <Label Content="ISBN" HorizontalAlignment="Left" Margin="23,121,0,0" VerticalAlignment="Top"/>
+        <Label Content="Fecha Publicación" HorizontalAlignment="Left" Margin="23,152,0,0" VerticalAlignment="Top"/>
+        <Label Content="Genero" HorizontalAlignment="Left" Margin="23,183,0,0" VerticalAlignment="Top"/>
+        <Label Content="Disponibilidad" HorizontalAlignment="Left" Margin="23,217,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textID" HorizontalAlignment="Left" Margin="150,32,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textTitulo" HorizontalAlignment="Left" Margin="150,63,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textAutor" HorizontalAlignment="Left" Margin="150,94,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textISBN" HorizontalAlignment="Left" Margin="150,125,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textFechaPublicacion" HorizontalAlignment="Left" Margin="150,156,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textGenero" HorizontalAlignment="Left" Margin="150,187,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textDisponibilidad" HorizontalAlignment="Left" Margin="150,221,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnGuardarLibro" Content="Guardar" HorizontalAlignment="Left" Margin="34,264,0,0" VerticalAlignment="Top" Width="186" Click="btnGuardarLibro_Click"/>
+        <Button x:Name="btnBorrarLibro" Content="Borrar" HorizontalAlignment="Left" Margin="35,289,0,0" VerticalAlignment="Top" Width="87" Click="btnBorrarLibro_Click"/>
+        <Button x:Name="btnModificarLibro" Content="Modificar" HorizontalAlignment="Left" Margin="127,289,0,0" VerticalAlignment="Top" Width="93" Click="btnModificarLibro_Click"/>
+        <DataGrid x:Name="dataGridLibros" IsReadOnly="True" Height="242" Width="480" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="300,42,0,0" SelectionChanged="dataGridLibros_SelectionChanged" MouseDoubleClick="dataGridLibros_MouseDoubleClick" AutoGeneratingColumn="dataGridLibros_AutoGeneratingColumn"/>
+        <Button Content="Prestamos" HorizontalAlignment="Left" Margin="721,10,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
+        <Button Content="Miembros" HorizontalAlignment="Left" Margin="658,10,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+
+    </Grid>
+</Window>
